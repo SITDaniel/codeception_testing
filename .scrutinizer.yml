@@ -14,7 +14,7 @@ build:
             - mysql -e "CREATE DATABASE yii2advanced_test"
         
         after:
-            - ./yii migrate
+            - ./yii_test migrate
         
     tests:
         override:
