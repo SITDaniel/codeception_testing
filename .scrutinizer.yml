@@ -13,6 +13,9 @@ build:
         before:
             - mysql -e "CREATE DATABASE yii2advanced_test"
         
+        after:
+            - ./yii migrate
+        
     tests:
         override:
             - ./vendor/codeception/base/codecept run
