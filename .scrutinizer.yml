@@ -12,9 +12,7 @@ build:
     project_setup:
         before:
             - mysql -e "CREATE DATABASE yii2advanced_test"
-        
-        after:
-            - ./yii_test migrate
+            - php yii_test migrate --interactive=0
         
     tests:
         override:
