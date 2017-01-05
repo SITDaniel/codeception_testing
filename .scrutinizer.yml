@@ -6,4 +6,4 @@ build:
             version: 7.0
     tests:
         override:
-            - codecept run
+            - ./vendor/codeception/base/codecept run
